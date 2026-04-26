@@ -25,15 +25,15 @@ const SearchBar = ({ onSearch }) => {
   }, [searchTerm, debouncedSearch]);
 
   return (
-    <div className="relative w-full flex items-center shadow-sm rounded-sm overflow-hidden">
+    <div className="relative w-full flex items-center shadow-sm rounded-[2px] overflow-hidden">
       <input
         type="text"
-        className="block w-full p-2.5 text-sm bg-white text-black outline-none border-none placeholder-gray-500"
+        className="block w-full p-3.5 text-sm bg-white text-black outline-none border-none placeholder-gray-400 font-medium"
         placeholder="Search for products, brands and more"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <div className="bg-white p-2 text-[#2874f0] cursor-pointer hover:bg-gray-50 transition-colors border-l border-gray-100">
+      <div className="bg-white p-3.5 text-[#2874f0] cursor-pointer hover:bg-gray-50 transition-colors border-l border-gray-100 flex items-center justify-center">
         <Search className="w-5 h-5" />
       </div>
     </div>

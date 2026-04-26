@@ -137,13 +137,13 @@ const Home = () => {
             </button>
           </div>
           
-          <div className="flex-1 w-full max-w-2xl">
+          <div className="flex-1 w-full max-w-3xl">
             <SearchBar onSearch={handleSearch} />
           </div>
 
           <button
             onClick={() => { setSelectedProduct(null); setIsFormOpen(true); }}
-            className="hidden sm:flex items-center space-x-2 px-6 py-2 bg-white text-[#2874f0] rounded-sm font-bold hover:bg-gray-100 transition-all shadow-sm"
+            className="hidden sm:flex items-center space-x-2 px-6 py-2.5 bg-white text-[#2874f0] rounded-sm font-bold hover:bg-gray-100 transition-all shadow-sm"
           >
             <Plus className="w-5 h-5" />
             <span>Add Product</span>
